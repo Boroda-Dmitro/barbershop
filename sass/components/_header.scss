@@ -1,0 +1,66 @@
+.site-header {
+  padding-top: 40px;
+
+  background-color: var(--color-tagline-dark);
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  @media screen and (min-width: $desktop) {
+    gap: 131px;
+  }
+  &__list {
+    display: none;
+    @include list;
+    gap: 20.5px;
+
+    @media screen and (min-width: $table) {
+      display: flex;
+    }
+  }
+  &__link {
+    @include link;
+    color: var(--color-white-primary);
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+}
+
+.header-contacts {
+  @include list;
+  display: none;
+
+  @media screen and (min-width: $table) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    gap: 43px;
+  }
+
+  &__link {
+    @include link;
+    color: var(--color-white-primary);
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+}
