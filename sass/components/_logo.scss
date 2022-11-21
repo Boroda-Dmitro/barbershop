@@ -1,0 +1,9 @@
+.logo {
+  &__icon {
+    fill: var(--color-white-primary);
+
+    @media screen and (min-width: $table) {
+      fill: var(--color-black-primary);
+    }
+  }
+}

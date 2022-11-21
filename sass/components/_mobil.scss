@@ -1,6 +1,7 @@
 .menu__toggle {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
+  fill: var(--color-white-primary);
   @media screen and (min-width: 768px) {
     display: none;
   }

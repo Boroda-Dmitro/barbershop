@@ -31,6 +31,7 @@ img {
 }
 
 .container {
+  position: relative;
   padding-left: 31px;
   padding-right: 31px;
   margin-left: auto;
@@ -67,8 +68,12 @@ img {
 }
 
 .site-header {
-  padding-top: 40px;
-  background-color: var(--color-tagline-dark);
+  height: 580px;
+}
+@media screen and (min-width: 768px) {
+  .site-header {
+    height: 680px;
+  }
 }
 .site-header__box {
   display: -webkit-box;
@@ -80,6 +85,37 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 40px;
+  margin-bottom: 112px;
+}
+.site-header__bgi {
+  position: absolute;
+  top: 0;
+  width: 480px;
+  height: 580px;
+  z-index: -1;
+  background-image: url(../images/hero/hero-mobil.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .site-header__bgi {
+    left: 0;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .site-header__bgi {
+    background-image: url(../images/hero/hero-mobil@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-header__bgi {
+    background-image: url(../images/hero/hero-table.jpg);
+    right: 26px;
+    width: 584px;
+    height: 680px;
+  }
 }
 
 .navigation {
@@ -89,7 +125,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 60px;
+  gap: 65px;
 }
 @media screen and (min-width: 1200px) {
   .navigation {
@@ -168,9 +204,37 @@ img {
 .menu__toggle {
   background-color: transparent;
   border: none;
+  fill: var(--color-white-primary);
 }
 @media screen and (min-width: 768px) {
   .menu__toggle {
     display: none;
   }
+}
+
+.logo__icon {
+  fill: var(--color-white-primary);
+}
+@media screen and (min-width: 768px) {
+  .logo__icon {
+    fill: var(--color-black-primary);
+  }
+}
+
+.hero__tagline {
+  position: relative;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-tagline-dark);
+  margin-left: 80px;
+}
+.hero__tagline::before {
+  content: "";
+  display: block;
+  background-color: var(--color-tagline-dark);
+  width: 60px;
+  height: 1px;
 }/*# sourceMappingURL=main.css.map */

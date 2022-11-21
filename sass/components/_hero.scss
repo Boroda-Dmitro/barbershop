@@ -1,0 +1,22 @@
+.hero {
+  &__tagline {
+    position: relative;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-tagline-dark);
+    margin-left: 80px;
+
+    &::before {.
+        content: '';
+        position: absolute;
+        left: -80px;
+        display: block;
+        background-color: var(--color-tagline-dark);
+        width: 60px;
+        height: 1px;
+    }
+  }
+}
