@@ -1,0 +1,183 @@
+// .box {
+//   width: 500px;
+//   height: 500px;
+//   border: 2px solid red;
+//   animation: hero-bgi 30ms linear infinite;
+
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
+
+@keyframes hero-bgi-mobil {
+  0% {
+    background-image: url(../images/hero/hero-mobil-1.jpg);
+  }
+  30% {
+    background-image: url(../images/hero/hero-mobil-1.jpg);
+  }
+  33% {
+    background-image: url(../images/hero/hero-mobil-2.jpg);
+  }
+  63% {
+    background-image: url(../images/hero/hero-mobil-2.jpg);
+  }
+  67% {
+    background-image: url(../images/hero/hero-mobil-3.jpg);
+  }
+  97% {
+    background-image: url(../images/hero/hero-mobil-3.jpg);
+  }
+  100% {
+    background-image: url(../images/hero/hero-mobil-1.jpg);
+  }
+}
+
+@keyframes hero-bgi-mobil-2x {
+  0% {
+    background-image: url(../images/hero/hero-mobil-1@2x.jpg);
+  }
+  30% {
+    background-image: url(../images/hero/hero-mobil-1@2x.jpg);
+  }
+  33% {
+    background-image: url(../images/hero/hero-mobil-2@2x.jpg);
+  }
+  63% {
+    background-image: url(../images/hero/hero-mobil-2@2x.jpg);
+  }
+  67% {
+    background-image: url(../images/hero/hero-mobil-3@2x.jpg);
+  }
+  97% {
+    background-image: url(../images/hero/hero-mobil-3@2x.jpg);
+  }
+  100% {
+    background-image: url(../images/hero/hero-mobil-1@2x.jpg);
+  }
+}
+
+@keyframes hero-bgi-table {
+  0% {
+    background-image: url(../images/hero/hero-table-1.jpg);
+  }
+  30% {
+    background-image: url(../images/hero/hero-table-1.jpg);
+  }
+  33% {
+    background-image: url(../images/hero/hero-table-2.jpg);
+  }
+  63% {
+    background-image: url(../images/hero/hero-table-2.jpg);
+  }
+  67% {
+    background-image: url(../images/hero/hero-table-3.jpg);
+  }
+  97% {
+    background-image: url(../images/hero/hero-table-3.jpg);
+  }
+  100% {
+    background-image: url(../images/hero/hero-table-1.jpg);
+  }
+}
+
+@keyframes hero-bgi-table-2x {
+  0% {
+    background-image: url(../images/hero/hero-table-1@2x.jpg);
+  }
+  30% {
+    background-image: url(../images/hero/hero-table-1@2x.jpg);
+  }
+  33% {
+    background-image: url(../images/hero/hero-table-2@2x.jpg);
+  }
+  63% {
+    background-image: url(../images/hero/hero-table-2@2x.jpg);
+  }
+  67% {
+    background-image: url(../images/hero/hero-table-3@2x.jpg);
+  }
+  97% {
+    background-image: url(../images/hero/hero-table-3@2x.jpg);
+  }
+  100% {
+    background-image: url(../images/hero/hero-table-1@2x.jpg);
+  }
+}
+
+@keyframes hero-bgi-desktop {
+  0% {
+    background-image: url(../images/hero/hero-desktop-1.jpg);
+  }
+  30% {
+    background-image: url(../images/hero/hero-desktop-1.jpg);
+  }
+  33% {
+    background-image: url(../images/hero/hero-desktop-2.jpg);
+  }
+  63% {
+    background-image: url(../images/hero/hero-desktop-2.jpg);
+  }
+  67% {
+    background-image: url(../images/hero/hero-desktop-3.jpg);
+  }
+  97% {
+    background-image: url(../images/hero/hero-desktop-3.jpg);
+  }
+  100% {
+    background-image: url(../images/hero/hero-desktop-1.jpg);
+  }
+}
+
+@keyframes hero-bgi-desktop-2x {
+  0% {
+    background-image: url(../images/hero/hero-desktop-1@2x.jpg);
+  }
+  30% {
+    background-image: url(../images/hero/hero-desktop-1@2x.jpg);
+  }
+  33% {
+    background-image: url(../images/hero/hero-desktop-2@2x.jpg);
+  }
+  63% {
+    background-image: url(../images/hero/hero-desktop-2@2x.jpg);
+  }
+  67% {
+    background-image: url(../images/hero/hero-desktop-3@2x.jpg);
+  }
+  97% {
+    background-image: url(../images/hero/hero-desktop-3@2x.jpg);
+  }
+  100% {
+    background-image: url(../images/hero/hero-desktop-1@2x.jpg);
+  }
+}
+
+
+// &__bgi {
+//   position: absolute;
+//   top: 0;
+
+//   width: 480px;
+//   height: 580px;
+//   z-index: -1;
+//   background-image: url(../images/hero/hero-mobil-1.png);
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+
+//   @media screen and (max-width: calc($table - 1px)) {
+//     left: 0;
+//   }
+
+//   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//     background-image: url(../images/hero/hero-mobil-1@2x.jpg);
+//   }
+
+//   @media screen and (min-width: $table) {
+//     background-image: url(../images/hero/hero-table.jpg);
+//     right: 26px;
+//     width: 584px;
+//     height: 680px;
+//   }
+// }

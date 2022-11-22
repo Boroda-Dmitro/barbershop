@@ -1,4 +1,15 @@
 .hero {
+  width: 335px;
+  @media screen and (min-width: $table) {
+    width: 360px;
+    margin-left: auto;
+    margin-right: 126px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+    margin-right: 526px;
+  }
+
   &__tagline {
     position: relative;
     font-weight: 600;
@@ -8,15 +19,42 @@
     text-transform: uppercase;
     color: var(--color-tagline-dark);
     margin-left: 80px;
+    margin-bottom: 20px;
 
-    &::before {.
-        content: '';
-        position: absolute;
-        left: -80px;
-        display: block;
-        background-color: var(--color-tagline-dark);
-        width: 60px;
-        height: 1px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -80px;
+      bottom: 9px;
+      display: block;
+      background-color: var(--color-tagline-dark);
+      width: 60px;
+      height: 1px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--color-white-primary);
+    @media screen and (min-width: $desktop) {
+      font-size: 72px;
+      line-height: 1.18;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.02em;
+    color: var(--color-hero-text);
+
+    @media screen and (min-width: $table) {
+      font-size: 18px;
+      line-height: 1.67;
     }
   }
 }
