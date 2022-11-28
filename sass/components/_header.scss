@@ -79,6 +79,10 @@
   &__link {
     @include link;
     color: var(--color-white-primary);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
 
     &:hover,
     &:focus {
@@ -90,6 +94,7 @@
 .header-contacts {
   @include list;
   display: none;
+  color: var(--color-white-primary);
 
   @media screen and (min-width: $table) {
     display: flex;
@@ -106,6 +111,11 @@
   &__link {
     @include link;
     color: var(--color-white-primary);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
 
     &:hover,
     &:focus {

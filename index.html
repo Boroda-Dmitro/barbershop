@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
@@ -60,8 +61,7 @@
       <div class="site-header__bgi"></div>
       <ul class="header-social">
         <li class="header-social__item header-social__item--tagline"></li>
-        <li class="header-social__item"><a href=""
-            class="header-social__link">Instagram</a></li>
+        <li class="header-social__item"><a href="" class="header-social__link">Instagram</a></li>
         <li class="header-social__item"><a href="" class="header-social__link">Youtube</a></li>
       </ul>
     </div>
@@ -71,25 +71,46 @@
     <section class="section about">
       <div class="container">
         <div class="about__box">
-          <p class="section__tagline">About</p>
-          <h2 class="section__title">Best Barbershop in your city</h2>
-          <p class="section__text">
-            If you want to add more confidence to your image, you should visit us
-          </p>
-          <p class="section__info">
-            We are a team that never stops at what has been achieved and are thirsty for changes.
-            And when you fall into the hands of our master, you will never be the same again. We
-            are a team that is always "on the same wave" with clients. Therefore, we are always
-            ready to improve everyone who comes to us!
-          </p>
-          <a href="#" class="main-btn">Online-booking</a>
+          <div class="about__images">
+            <picture>
+              <source srcset="./images/about/beard-trimming-desktop.jpg 1x,
+                                  ./images/about/beard-trimming-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/about/beard-trimming-table.jpg 1x,
+                                  ./images/about/beard-trimming-table@2x.jpg 2x" media="(max-width: 1199px)" />
+
+              <img src="./images/about/beard-trimming-table.jpg" alt="beard trimming" />
+            </picture>
+            <picture>
+              <source srcset="./images/about/hair-cut-desktop.jpg 1x, ./images/about/hair-cut-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/about/hair-cut-table.jpg 1x,  ./images/about/hair-cut-table@2x.jpg 2x"
+                media="(max-width: 1199px)" />
+
+              <img src="./images/about/hair-cut-table.jpg" alt="hair-cut" />
+            </picture>
+          </div>
+          <div class="about__info">
+            <p class="section__tagline">About</p>
+            <h2 class="section__title">Best Barbershop in your city</h2>
+            <p class="section__text">
+              If you want to add more confidence to your image, you should visit us
+            </p>
+            <p class="section__info">
+              We are a team that never stops at what has been achieved and are thirsty for changes.
+              And when you fall into the hands of our master, you will never be the same again. We
+              are a team that is always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <a href="#" class="main-btn">Online-booking</a>
+          </div>
+
         </div>
       </div>
     </section>
     <section class="section services">
       <div class="container">
-        <p class="section__tagline">Spend your time with the best masters</p>
-        <h2 class="section__title">Services and prices</h2>
+        <p class="section__tagline section__tagline--light">Spend your time with the best masters</p>
+        <h2 class="section__title section__title--light section__title--mb">Services and prices</h2>
         <div class="services__box">
           <ul class="services__list">
             <li class="services__item">
@@ -133,8 +154,52 @@
               <p class="services__text">from 200 uah.</p>
             </li>
           </ul>
+          <ul class="services__list services__list--desktop">
+            <li class="services__item">
+              <p class="services__text">Men’s haircut</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 300 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Beard trim</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Mustache trim</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Straight razor shave</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+          </ul>
+          <ul class="services__list services__list--desktop services__list--gradient">
+            <li class="services__item">
+              <p class="services__text">Trainee’s haircut</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 50 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Haircut under the nozzle</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Children’s haircut (0-12 y.o.)</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 300 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Camouflage of grey hair</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+          </ul>
         </div>
-        <a href="#" class="main-btn">Online-booking</a>
+        <a href="#" class="main-btn main-btn--light">Online-booking</a>
       </div>
     </section>
     <section class="section benefits">

@@ -1,12 +1,21 @@
 .main-btn {
-  display: block;
+  @include link;
+  display: inline-flex;
+  height: 40px;
   padding: 12px 20px;
   border: 1px solid var(--color-brand);
   border-radius: 25px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
     color: var(--color-white-primary);
     background-color: var(--color-brand);
   }
+
+  &--light {
+    color: var(--color-white-primary);
+  }
+
 }
