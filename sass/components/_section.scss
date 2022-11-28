@@ -50,6 +50,13 @@
     &--mb {
       margin-bottom: 44px;
     }
+
+    &--big {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 1.175;
+      text-align: left;
+    }
   }
   &__text {
     margin-bottom: 20px;
@@ -67,6 +74,14 @@
     // @media screen and (min-width: $desktop) {
     //   margin-bottom: 42px;
     // }
+
+    &--big {
+      font-size: 18px;
+      line-height: 1.67;
+    }
+    &--mb {
+      margin-bottom: 44px;
+    }
   }
 
   &__info {

@@ -11,21 +11,19 @@
   }
 
   &__tagline {
-    position: relative;
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-tagline-light);
-    margin-left: 80px;
     margin-bottom: 20px;
 
     &::before {
       content: '';
-      position: absolute;
-      left: -80px;
-      bottom: 9px;
+      margin-right: 40px;
       display: block;
       background-color: var(--color-tagline-light);
       width: 60px;
