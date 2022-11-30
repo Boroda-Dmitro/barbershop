@@ -1,13 +1,33 @@
 .hero {
-  width: 335px;
-  @media screen and (min-width: $table) {
-    width: 360px;
-    margin-left: auto;
-    margin-right: 126px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-left: auto;
-    margin-right: 526px;
+  &__container {
+    padding: 208px 113px 209px 31px;
+
+    width: 480px;
+    height: 580px;
+    z-index: -1;
+    background-image: url(../images/hero/hero-mobil-1.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/hero/hero-mobil-1@2x.jpg);
+    }
+
+    @media screen and (min-width: $table) {
+      padding: 272px 126px 137px 258px;
+      background-image: url(../images/hero/hero-table-1.jpg);
+      background-position: right;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/hero/hero-table-1@2x.jpg);
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      background-image: url(../images/hero/hero-desktop-1.jpg);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/hero/hero-desktop-1@2x.jpg);
+      }
+    }
   }
 
   &__tagline {
@@ -56,3 +76,8 @@
     }
   }
 }
+
+// .__bgi {
+//   position: absolute;
+//   top: 0;
+// }

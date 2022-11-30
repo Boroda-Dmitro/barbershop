@@ -1,295 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Barbershop</title>
-  </head>
 
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <div class="site-header__box">
-          <nav class="navigation">
-            <a href="./index.html" class="logo">
-              <svg width="69" height="55.5" class="logo__icon">
-                <use href="./images/icons.svg#icon-logo"></use>
-              </svg>
-            </a>
-            <ul class="navigation__list">
-              <li class="navigation__item"><a href="" class="navigation__link">About</a></li>
-              <li class="navigation__item">
-                <a href="" class="navigation__link">Services and prices</a>
-              </li>
-              <li class="navigation__item"><a href="" class="navigation__link">Barbers</a></li>
-              <li class="navigation__item"><a href="" class="navigation__link">Contacts</a></li>
-            </ul>
-          </nav>
-          <ul class="header-contacts">
-            <li class="header-contacts__item">
-              <a href="tel:+380441111111" class="header-contacts__link">+38 044 111 11 11</a>
-            </li>
-            <li class="header-contacts__item">
-              <a href="#" class="header-contacts__link main-btn">Online-booking</a>
-            </li>
-          </ul>
-          <button
-            class="menu__toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#icon-menu"></use>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <title>Barbershop</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container ">
+      <div class="site-header__box">
+        <nav class="navigation">
+          <a href="./index.html" class="logo">
+            <svg width="69" height="55.5" class="logo__icon">
+              <use href="./images/icons.svg#icon-logo"></use>
             </svg>
-          </button>
-        </div>
-        <section class="hero">
-          <p class="hero__tagline">A hair salon for men in Kyiv</p>
-          <h1 class="hero__title">BarberShop</h1>
-          <p class="hero__text">
-            We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
-          </p>
-        </section>
-
-        <div class="site-header__bgi"></div>
-        <ul class="header-social">
-          <li class="header-social__item header-social__item--tagline"></li>
-          <li class="header-social__item"><a href="" class="header-social__link">Instagram</a></li>
-          <li class="header-social__item"><a href="" class="header-social__link">Youtube</a></li>
+          </a>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="" class="navigation__link">About</a></li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Services and prices</a>
+            </li>
+            <li class="navigation__item"><a href="" class="navigation__link">Barbers</a></li>
+            <li class="navigation__item"><a href="" class="navigation__link">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a href="tel:+380441111111" class="header-contacts__link">+38 044 111 11 11</a>
+          </li>
+          <li class="header-contacts__item">
+            <a href="#" class="header-contacts__link main-btn">Online-booking</a>
+          </li>
         </ul>
+        <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header>
 
-    <main>
-      <section class="section about">
-        <div class="container">
-          <div class="about__box">
-            <div class="about__images">
-              <picture>
-                <source
-                  srcset="
+      <ul class="header-social">
+        <li class="header-social__item header-social__item--tagline"></li>
+        <li class="header-social__item"><a href="" class="header-social__link">Instagram</a></li>
+        <li class="header-social__item"><a href="" class="header-social__link">Youtube</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+
+        <p class="hero__tagline">A hair salon for men in Kyiv</p>
+        <h1 class="hero__title">BarberShop</h1>
+        <p class="hero__text">
+          We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+        </p>
+
+
+        <!-- <div class="site-header__bgi"></div> -->
+      </div>
+
+    </section>
+
+    <!-- <section class="section about">
+      <div class="container">
+        <div class="about__box">
+          <div class="about__images">
+            <picture>
+              <source srcset="
                     ./images/about/beard-trimming-desktop.jpg    1x,
                     ./images/about/beard-trimming-desktop@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
+                  " media="(min-width: 1200px)" />
+              <source srcset="
                     ./images/about/beard-trimming-table.jpg    1x,
                     ./images/about/beard-trimming-table@2x.jpg 2x
-                  "
-                  media="(max-width: 1199px)"
-                />
+                  " media="(max-width: 1199px)" />
 
-                <img src="./images/about/beard-trimming-table.jpg" alt="beard trimming" />
-              </picture>
-              <picture>
-                <source
-                  srcset="
+              <img src="./images/about/beard-trimming-table.jpg" alt="beard trimming" />
+            </picture>
+            <picture>
+              <source srcset="
                     ./images/about/hair-cut-desktop.jpg    1x,
                     ./images/about/hair-cut-desktop@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
+                  " media="(min-width: 1200px)" />
+              <source srcset="
                     ./images/about/hair-cut-table.jpg    1x,
                     ./images/about/hair-cut-table@2x.jpg 2x
-                  "
-                  media="(max-width: 1199px)"
-                />
+                  " media="(max-width: 1199px)" />
 
-                <img src="./images/about/hair-cut-table.jpg" alt="hair-cut" />
-              </picture>
-            </div>
-            <div class="about__info">
-              <p class="section__tagline">About</p>
-              <h2 class="section__title">Best Barbershop in your city</h2>
-              <p class="section__text">
-                If you want to add more confidence to your image, you should visit us
-              </p>
-              <p class="section__info">
-                We are a team that never stops at what has been achieved and are thirsty for
-                changes. And when you fall into the hands of our master, you will never be the same
-                again. We are a team that is always "on the same wave" with clients. Therefore, we
-                are always ready to improve everyone who comes to us!
-              </p>
-              <a href="#" class="main-btn">Online-booking</a>
-            </div>
+              <img src="./images/about/hair-cut-table.jpg" alt="hair-cut" />
+            </picture>
           </div>
-        </div>
-      </section>
-      <section class="section services">
-        <div class="container">
-          <p class="section__tagline section__tagline--light">
-            Spend your time with the best masters
-          </p>
-          <h2 class="section__title section__title--light section__title--mb section__title--big">
-            Services and prices
-          </h2>
-          <div class="services__box">
-            <ul class="services__list">
-              <li class="services__item">
-                <p class="services__text">Men’s haircut</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 300 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Beard trim</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 200 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Mustache trim</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 200 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Straight razor shave</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 200 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Trainee’s haircut</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 50 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Haircut under the nozzle</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 200 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Children’s haircut (0-12 y.o.)</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 300 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Camouflage of grey hair</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 200 uah.</p>
-              </li>
-            </ul>
-            <ul class="services__list services__list--desktop">
-              <li class="services__item">
-                <p class="services__text">Men’s haircut</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 300 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Beard trim</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 200 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Mustache trim</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 200 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Straight razor shave</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 200 uah.</p>
-              </li>
-            </ul>
-            <ul class="services__list services__list--desktop services__list--gradient">
-              <li class="services__item">
-                <p class="services__text">Trainee’s haircut</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 50 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Haircut under the nozzle</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 200 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Children’s haircut (0-12 y.o.)</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 300 uah.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__text">Camouflage of grey hair</p>
-                <p class="services__text--line"></p>
-                <p class="services__text">from 200 uah.</p>
-              </li>
-            </ul>
-          </div>
-          <a href="#" class="main-btn main-btn--light services__main-btn">Online-booking</a>
-        </div>
-      </section>
-      <section class="section benefits">
-        <div class="container benefits__container">
-          <div class="benefits__box">
-            <p class="section__tagline">Old traditional school</p>
-            <h2 class="section__title section__title--big">&iquestWhy people come to us?</h2>
-            <p class="section__text section__text--big section__text--mb">
-              Only good things are said about us. But it's better to see and feel 1 time than read
-              10 times.
+          <div class="about__info">
+            <p class="section__tagline">About</p>
+            <h2 class="section__title">Best Barbershop in your city</h2>
+            <p class="section__text">
+              If you want to add more confidence to your image, you should visit us
             </p>
-          </div>
-          <div class="benefits__box benefits__box--right">
-            <ul class="benefits__list">
-              <li class="benefits__item">
-                <h2 class="benefits__title">600 <span class="benefits__decor">+</span></h2>
-                <p class="benefits__text">Satisfied customers per day</p>
-              </li>
-              <li class="benefits__item">
-                <h2 class="benefits__title">50 <span class="benefits__decor">+</span></h2>
-                <p class="benefits__text">Awards for excellent service</p>
-              </li>
-              <li class="benefits__item">
-                <h2 class="benefits__title">20 <span class="benefits__decor">+</span></h2>
-                <p class="benefits__text">Kyiv’s best barbers</p>
-              </li>
-              <li class="benefits__item">
-                <h2 class="benefits__title">100 <span class="benefits__decor">+</span></h2>
-                <p class="benefits__text">Gifts for regular customers</p>
-              </li>
-            </ul>
+            <p class="section__info">
+              We are a team that never stops at what has been achieved and are thirsty for
+              changes. And when you fall into the hands of our master, you will never be the same
+              again. We are a team that is always "on the same wave" with clients. Therefore, we
+              are always ready to improve everyone who comes to us!
+            </p>
+            <a href="#" class="main-btn">Online-booking</a>
           </div>
         </div>
-      </section>
-      <section class="section team">
-        <div class="container">
-          <p class="section__tagline">For true enjoyers of the atmosphere</p>
-          <h2 class="section__title">Our barbers</h2>
-          <ul class="team__list">
-            <li class="team__item">
-              <img src="" alt="" />
-              <h2 class="team__name">John Smith</h2>
-              <p class="team__profession">Extreme Barber</p>
+      </div>
+    </section> -->
+    <!-- <section class="section services">
+      <div class="container">
+        <p class="section__tagline section__tagline--light">
+          Spend your time with the best masters
+        </p>
+        <h2 class="section__title section__title--light section__title--mb section__title--big">
+          Services and prices
+        </h2>
+        <div class="services__box">
+          <ul class="services__list">
+            <li class="services__item">
+              <p class="services__text">Men’s haircut</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 300 uah.</p>
             </li>
-            <li class="team__item">
-              <img src="" alt="" />
-              <h2 class="team__name">Michele Doe</h2>
-              <p class="team__profession">Extreme Barber</p>
+            <li class="services__item">
+              <p class="services__text">Beard trim</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
             </li>
-            <li class="team__item">
-              <img src="" alt="" />
-              <h2 class="team__name">Alan Black</h2>
-              <p class="team__profession">Extreme Barber</p>
+            <li class="services__item">
+              <p class="services__text">Mustache trim</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Straight razor shave</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Trainee’s haircut</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 50 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Haircut under the nozzle</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Children’s haircut (0-12 y.o.)</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 300 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Camouflage of grey hair</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+          </ul>
+          <ul class="services__list services__list--desktop">
+            <li class="services__item">
+              <p class="services__text">Men’s haircut</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 300 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Beard trim</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Mustache trim</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Straight razor shave</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+          </ul>
+          <ul class="services__list services__list--desktop services__list--gradient">
+            <li class="services__item">
+              <p class="services__text">Trainee’s haircut</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 50 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Haircut under the nozzle</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Children’s haircut (0-12 y.o.)</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 300 uah.</p>
+            </li>
+            <li class="services__item">
+              <p class="services__text">Camouflage of grey hair</p>
+              <p class="services__text--line"></p>
+              <p class="services__text">from 200 uah.</p>
             </li>
           </ul>
         </div>
-      </section>
-    </main>
-    <footer></footer>
+        <a href="#" class="main-btn main-btn--light services__main-btn">Online-booking</a>
+      </div>
+    </section> -->
+    <!-- <section class="section benefits">
+      <div class="container benefits__container">
+        <div class="benefits__box">
+          <p class="section__tagline">Old traditional school</p>
+          <h2 class="section__title section__title--big">&iquestWhy people come to us?</h2>
+          <p class="section__text section__text--big section__text--mb">
+            Only good things are said about us. But it's better to see and feel 1 time than read
+            10 times.
+          </p>
+        </div>
+        <div class="benefits__box benefits__box--right">
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <h2 class="benefits__title">600 <span class="benefits__decor">+</span></h2>
+              <p class="benefits__text">Satisfied customers per day</p>
+            </li>
+            <li class="benefits__item">
+              <h2 class="benefits__title">50 <span class="benefits__decor">+</span></h2>
+              <p class="benefits__text">Awards for excellent service</p>
+            </li>
+            <li class="benefits__item">
+              <h2 class="benefits__title">20 <span class="benefits__decor">+</span></h2>
+              <p class="benefits__text">Kyiv’s best barbers</p>
+            </li>
+            <li class="benefits__item">
+              <h2 class="benefits__title">100 <span class="benefits__decor">+</span></h2>
+              <p class="benefits__text">Gifts for regular customers</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="section team">
+      <div class="container">
+        <p class="section__tagline">For true enjoyers of the atmosphere</p>
+        <h2 class="section__title">Our barbers</h2>
+        <ul class="team__list">
+          <li class="team__item">
+            <img src="" alt="" />
+            <h2 class="team__name">John Smith</h2>
+            <p class="team__profession">Extreme Barber</p>
+          </li>
+          <li class="team__item">
+            <img src="" alt="" />
+            <h2 class="team__name">Michele Doe</h2>
+            <p class="team__profession">Extreme Barber</p>
+          </li>
+          <li class="team__item">
+            <img src="" alt="" />
+            <h2 class="team__name">Alan Black</h2>
+            <p class="team__profession">Extreme Barber</p>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+  </main>
+  <!-- <footer></footer> -->
 
-    <div class="box"></div>
 
-    <script defer src="js/mobile-menu.js"></script>
-  </body>
+  <script defer src="js/mobile-menu.js"></script>
+</body>
+
 </html>
