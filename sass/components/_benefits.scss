@@ -1,4 +1,5 @@
 .benefits {
+  background-color: var(--color-white-primary);
   &__container {
     @media screen and (min-width: $desktop) {
       display: flex;

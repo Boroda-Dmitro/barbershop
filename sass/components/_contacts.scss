@@ -1,0 +1,115 @@
+.contacts {
+  background-color: #111319;
+  &__box {
+    padding-top: 84px;
+
+    color: var(--color-hero-text);
+    background-image: url(../images/contacts/bgc-image-mobil.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/bgc-image-mobil@2x.png);
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 44px;
+
+    font-size: 18px;
+    line-height: 1.66;
+  }
+
+  &__link {
+    @include link;
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+}
+
+.online-booking {
+  padding-bottom: 84px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  color: var(--color-form);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &__item {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__input {
+    height: 24px;
+    width: 100%;
+    padding-left: 55px;
+    color: var(--color-white-primary);
+  }
+
+  &__textarea {
+    height: 76px;
+    width: 100%;
+    padding-top: 20px;
+    color: var(--color-white-primary);
+  }
+
+  &__input,
+  &__textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-form);
+  }
+
+  &__input:hover,
+  &__input:focus,
+  &__textarea:hover,
+  &__textarea:focus {
+    outline: none;
+    border-color: var(--color-white-primary);
+  }
+
+  &__input:hover ~ .form__label,
+  &__input:focus ~ .form__label,
+  &__textarea:hover ~ .form__label,
+  &__textarea:focus ~ .form__label {
+    color: var(--color-white-primary);
+  }
+
+  &__main-btn {
+    margin: 0 auto;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+  }
+}

@@ -1,9 +1,13 @@
 .team {
-  &__list {
+   &__list {
     @include list;
     display: flex;
     flex-direction: column;
     gap: 64px;
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      gap: 30px;
+    }
   }
 
   &__photo {
@@ -31,4 +35,10 @@
     letter-spacing: 0.02em;
     color: var(--color-brand);
   }
+}
+
+.team .container {
+  @media screen and (min-width: $table) and (max-width: 1199px){
+    padding: 0 159px;
+      }
 }
