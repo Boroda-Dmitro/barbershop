@@ -1,0 +1,117 @@
+.modal-menu {
+  position: fixed;
+
+  &__box {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 140px;
+    padding-top: 118px;
+    padding-left: 40px;
+    background-color: var(--color-white-primary);
+    @media screen and (min-width: $table) {
+      display: none;
+    }
+  }
+  &__list {
+    @include list;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  &__link {
+    @include link;
+    color: var(--color-title-primary);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.1em;
+    transition: color 200ms linear;
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+}
+
+.modal-contacts {
+  @include list;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 64px;
+  &__link {
+    @include link;
+    color: var(--color-title-primary);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.1em;
+    transition: color 200ms linear;
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+}
+
+.modal-social {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  &__list {
+    @include list;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__link {
+    @include link;
+    color: var(--color-title-primary);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.35;
+    letter-spacing: 0.2em;
+    transition: color 200ms linear;
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+  &__tagline {
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-title-primary);
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.678);
+  @media screen and (min-width: $table) {
+    display: none;
+  }
+}
+
+.close-menu {
+  position: absolute;
+  top: 48px;
+  right: 31px;
+  background-color: transparent;
+  border: none;
+}
+
+.hidden {
+  transform: translateY(100%);
+}

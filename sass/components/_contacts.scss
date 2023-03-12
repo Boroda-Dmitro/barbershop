@@ -1,7 +1,20 @@
 .contacts {
   background-color: #111319;
+
+  padding: 0;
+
+  &__wraper {
+    @media screen and (min-width: $desktop) {
+      margin: 0 auto;
+      width: 1200px;
+      display: flex;
+      padding: 0 15px;
+      gap: 30px;
+    }
+  }
   &__box {
     padding-top: 84px;
+    padding-bottom: 84px;
 
     color: var(--color-hero-text);
     background-image: url(../images/contacts/bgc-image-mobil.png);
@@ -11,6 +24,9 @@
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/contacts/bgc-image-mobil@2x.png);
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 0;
     }
   }
 
@@ -30,6 +46,8 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    transition: color 200ms linear;
+
     &:hover,
     &:focus {
       color: var(--color-brand);
@@ -37,29 +55,65 @@
   }
 }
 
+.contacts .container {
+  @media screen and (min-width: $table) {
+    padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 570px;
+    margin: 0;
+    padding: 120px 0px 120px 100px;
+  }
+}
+
 .online-booking {
+  padding-top: 84px;
   padding-bottom: 84px;
+  @media screen and (min-width: $table) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 44px;
+  flex-wrap: wrap;
   color: var(--color-form);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  @media screen and (min-width: $table) {
+    flex-direction: row;
+    gap: 30px;
+  }
 
   &__item {
     position: relative;
+    @media screen and (min-width: $table) {
+      min-width: calc(50% - 30px);
+    }
+    @media screen and (min-width: $desktop) {
+      min-width: calc(50% - 15px);
+    }
+
+    &--wide {
+      width: 100%;
+    }
   }
 
   &__label {
     position: absolute;
     top: 0;
     left: 0;
+    transition: color 200ms linear;
   }
 
   &__input {
@@ -67,12 +121,16 @@
     width: 100%;
     padding-left: 55px;
     color: var(--color-white-primary);
+
+    @media screen and (min-width: $desktop) {
+    }
   }
 
   &__textarea {
     height: 76px;
     width: 100%;
     padding-top: 20px;
+
     color: var(--color-white-primary);
   }
 
@@ -81,6 +139,7 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid var(--color-form);
+    transition: border 200ms linear;
   }
 
   &__input:hover,
@@ -111,5 +170,9 @@
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.09em;
+
+    @media screen and (min-width: $table) {
+      margin: 0;
+    }
   }
 }

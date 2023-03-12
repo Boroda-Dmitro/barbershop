@@ -1,6 +1,10 @@
 .logo {
   &__icon {
     fill: var(--color-white-primary);
+    transition: fill 200ms linear;
+    &:hover, &:focus {
+      fill: var(--color-brand)
+    }
 
     @media screen and (min-width: $table) {
       fill: var(--color-black-primary);

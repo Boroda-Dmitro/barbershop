@@ -11,6 +11,7 @@
     background-color: var(--color-white-primary);
     border-radius: 50%;
     fill: var(--color-title-primary);
+    transition: fill 200ms linear;
 
     &:hover, &:focus {
         fill: var(--color-brand);
